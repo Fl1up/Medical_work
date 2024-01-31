@@ -10,8 +10,8 @@ services:
 
   app:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000 && python3 manage.py add_info
+    command: python manage.py runserver 0.0.0.0:8000 && python3 manage.py add_info && python manage.py createsuperuser
     ports:
-      - "8000:8000"
+      - "8080:8000"
     depends_on:
       - db

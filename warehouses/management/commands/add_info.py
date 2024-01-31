@@ -13,7 +13,6 @@ name_employee = ["Игорь", "Вася", "Андрей", "Таня", "Анто
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        User.objects.all().delete()
         Warehouse.objects.all().delete()
         Technique.objects.all().delete()
         Stock.objects.all().delete()
