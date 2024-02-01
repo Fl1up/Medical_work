@@ -23,7 +23,7 @@
 Создаем суперпользователя.
 
 4- sudo docker-compose exec app python manage.py add_info  
-Выполняем крипт по заполнению всех полей.
+Выполняем скрипт по заполнению всех полей.
 
 5- sudo docker-compose exec app python manage.py makemigrations   
 6- sudo docker-compose exec app python manage.py migrate  
@@ -33,7 +33,7 @@
 Проверка работы django 
 - http://localhost:8080
 Вход а вдминку
-- http://localhost:8030/admin/
+- http://localhost:8080/admin/
 
 
 При возможной ошибке :
